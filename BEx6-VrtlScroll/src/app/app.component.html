@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+</div>
+<cdk-virtual-scroll-viewport itemSize="100" class="list">
+     <li *cdkVirtualFor="let p of dummydata;" >
+      <div class="thumbnail-wrap">
+          <img src="{{p.avatar}}" />
+      </div>
+      <div class="info-wrap">
+          <h4>{{p.name}}</h4>
+          <h6>{{p.company}}</h6>
+      </div>
+    </li>
+  
+</cdk-virtual-scroll-viewport>
+
+
