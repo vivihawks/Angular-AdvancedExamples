@@ -1,0 +1,38 @@
+
+$backColor: brown;
+
+button {
+    border-color: red;
+    color: red;
+
+    &:hover, &:after, &:focus {
+        background-color: transparent;
+        color: $backColor;
+    }
+}
+
+
+
+
+
+.brand-custom {
+    &:hover, &:focus, &:active {
+        background-color: transparent;
+        color:$backColor;
+    }
+}
+
+.login-custom {
+    &:hover, &:focus, &:active {
+        background-color: transparent;
+        color:$backColor !important;
+    }
+}
+
+.register-custom {
+    &:hover, &:focus, &:active {
+        background-color: transparent;
+        color:$backColor !important;
+    }
+}
+
