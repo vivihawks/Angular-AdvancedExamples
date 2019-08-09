@@ -1,12 +1,12 @@
 
-$backColor: brown;
+$backColor: orange;
 
 button {
-    border-color: red;
-    color: red;
+    border-color: blue;
+    color: green;
 
     &:hover, &:after, &:focus {
-        background-color: transparent;
+        background-color: silver;
         color: $backColor;
     }
 }

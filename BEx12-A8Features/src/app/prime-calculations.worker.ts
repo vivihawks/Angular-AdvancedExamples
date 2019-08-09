@@ -1,8 +1,9 @@
 /*
 Commands to be run
-1. OPTIONAL npx -p @angular/cli@next ng new prime-numbers
-2. ng generate web-worker prime-calculations
-3. npm install prime-number
+1. OPTIONAL npx -p @angular/cli@next 
+2. ng new prime-numbers
+3. ng generate web-worker prime-calculations
+4. npm install prime-number
 */
 
 import isPrimeNumber from 'prime-number';

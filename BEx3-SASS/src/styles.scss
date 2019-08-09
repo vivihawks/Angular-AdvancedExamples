@@ -52,7 +52,9 @@ $fa-font-path: "~font-awesome/fonts";
     }
  }
 //Using the mixins defined above
+//theme1.scss
 @include themable(theme-1, #f7eb80, #497265, #82aa91, #fff, #bc6a49);
+//theme2.scss 
 @include themable(theme-2, #e4ada7, #d88880, #cc6359, #fff, #481b16);
 
 $theme-1: (
