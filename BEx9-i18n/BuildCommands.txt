@@ -1,0 +1,5 @@
+ng build --prod --i18n-file src/locale/messages.fr.xlf --i18n-format xlf --i18n-locale fr
+
+OR
+
+ng build --configuration=ta --baseHref=ta --outputPath=./dist/ta

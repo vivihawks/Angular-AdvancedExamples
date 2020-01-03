@@ -31,6 +31,13 @@ describe('ContactComponent', () => {
     });
   }));
 
+  //describe: beforeAll > beforeEach > it > afterEach > afterAll
+  //                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  //afterEach
+  //beforeAll
+  //afterAll
+
   it(`should have as text 'contact page'`, async(() => {
     expect(comp.text).toEqual('contact page');
   }));

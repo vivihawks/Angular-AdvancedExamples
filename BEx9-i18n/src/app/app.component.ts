@@ -6,7 +6,7 @@ import {TranslateService} from '@ngx-translate/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-	
+	currentUrl : string ;
 	  minutes = 0;
 	  gender = 'female';
 	  fly = true;
@@ -27,6 +27,7 @@ export class AppComponent {
 		translate.addLangs(['en', 'ta'])
 		translate.setDefaultLang('en');
 		translate.use('ta');
+		this.currentUrl = window.location.href;
 	  }
   
 

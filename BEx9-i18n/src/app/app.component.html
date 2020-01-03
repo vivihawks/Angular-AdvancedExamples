@@ -2,7 +2,7 @@
   Hello i18n!
 </h1>
 
-<ng-container i18n>I don't output any element</ng-container>
+<span i18n>I don't output any element</span>
 
 <br />
 
@@ -20,7 +20,18 @@
   =1 {one minute ago}
   other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
 </span>
+<br>
+<br>
+Select your language : 
+<span *ngIf="currentUrl.search('en')!=-1"> English&nbsp;</span>
+<span *ngIf="currentUrl.search('ta')!=-1"> Tamil&nbsp;</span>
+<span *ngIf="currentUrl.search('hi')!=-1"> Hindhi&nbsp;</span>
+<span *ngIf="currentUrl.search('fr')!=-1"> French&nbsp;</span>
 
+<span *ngIf="currentUrl.search('en')==-1"> <a href="/BEx9-i18n/en">English</a>&nbsp;&nbsp;</span>
+<span *ngIf="currentUrl.search('ta')==-1"><a href="/BEx9-i18n/ta">Tamil</a>&nbsp;</span>
+<span *ngIf="currentUrl.search('hi')==-1"><a href="/BEx9-i18n/hi">Hindhi</a>&nbsp;</span>
+<span *ngIf="currentUrl.search('fr')==-1"><a href="/BEx9-i18n/fr">French</a>&nbsp;</span>
 <hr>
 <h4> ngx-translate based Demo</h4>
 <h1>

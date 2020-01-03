@@ -9,7 +9,10 @@ $ ng generate component admin/dashboard
 
 */
 const routes: Routes = [
-{ path: 'admin', loadChildren: () => import(`./admin/admin.module`).then(m => m.AdminModule) }
+
+  { path: 'admin', loadChildren: () => import(`./admin/admin.module`).then(m => m.AdminModule) }
+
+
 /* 
 Old Import 
 ~~~~~~~~~~

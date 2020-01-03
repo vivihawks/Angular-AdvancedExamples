@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test | http-server -c-1 -o -p 9875 ./coverage",
+    "test": "ng test --code-coverage| http-server -c-1 -o -p 9875 ./coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

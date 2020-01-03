@@ -34,5 +34,6 @@ export class BypassSecurityComponent {
     this.videoUrl =
         this.sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl);
   }
+  
   // #enddocregion trust-video-url
 }

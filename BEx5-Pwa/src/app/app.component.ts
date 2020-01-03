@@ -7,7 +7,7 @@ import{DataService} from './data.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'BEx5-Pwa';
+  title = 'BEx5-Pwa Example';
   update: boolean = false;
   joke: any; 
 
