@@ -1,0 +1,11 @@
+h3{
+    font-size: small;
+    color: orangered;
+    animation: blinker 1s linear infinite;
+}
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BEx15_JSAngularCommunication</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    button{
+      width:20%;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <app-root>
+Loading
+  </app-root>
+  <hr>
+  <h4>The below controls are external to Angular</h4>
+  <div><button onclick="document.dispatchEvent(new CustomEvent('myEvent', {detail: 'Hello1 Angular!'}))">1. Send Event to Angular</button> </div>
+  <div><button onclick="window.postMessage({name:'myEvent2',detail:'Hello2 Angular!'}, '*')">2. Send Message to Angular</button> </div>
+  <div><button onclick="window.myComponentRef.zone.run(() => { window.myComponentRef.callAngularDirect({detail:'Hello3 Angular!'}); });  ">3. Directly Invoke Angular</button> </div>
+
+</body>
+</html>
