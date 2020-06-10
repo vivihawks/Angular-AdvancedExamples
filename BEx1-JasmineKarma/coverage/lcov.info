@@ -1,5 +1,5 @@
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\polyfills.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\polyfills.ts
 FNF:0
 FNH:0
 DA:41,1
@@ -11,7 +11,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\test.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\test.ts
 FN:20,(anonymous_0)
 FNF:1
 FNH:1
@@ -35,7 +35,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\app.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\app.component.ts
 FN:3,AppComponent
 FNF:1
 FNH:1
@@ -50,7 +50,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\about\about.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\about\about.component.ts
 FN:3,AboutComponent
 FNF:1
 FNH:1
@@ -65,7 +65,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\contact\contact.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\contact\contact.component.ts
 FN:18,ContactComponent
 FN:22,(anonymous_4)
 FN:36,(anonymous_5)
@@ -92,7 +92,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\home\home.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\home\home.component.ts
 FN:3,HomeComponent
 FNF:1
 FNH:1
@@ -108,7 +108,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\quote-text\quote-text.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\quote-text\quote-text.component.ts
 FN:8,QuoteTextComponent
 FNF:1
 FNH:1
@@ -123,7 +123,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\user\user.component.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\user\user.component.ts
 FN:13,UserComponent
 FNF:1
 FNH:1
@@ -141,7 +141,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\components\user\user.service.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\components\user\user.service.ts
 FN:5,UserService
 FN:7,(anonymous_4)
 FNF:2
@@ -159,7 +159,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Vignesh\Academy\Angular7\A7\AdvancedExamples\BEx1-JasmineKarma\src\app\mocks\user.service.mock.ts
+SF:D:\Vignesh\Academy\Angular\Workspace\AdvancedExamples\BEx1-JasmineKarma\src\app\mocks\user.service.mock.ts
 FN:5,UserServiceMock
 FN:7,(anonymous_4)
 FNF:2
