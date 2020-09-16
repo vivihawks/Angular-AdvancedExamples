@@ -2,7 +2,7 @@ function enableRequestButtons() {
   var validButton = document.querySelector('#valid-api-call');
   validButton.addEventListener('click', function() {
     // This is a valid YouTube API key, and should result in a valid API request.
-    makeApiRequest('AIzaSyCr0XVB-Hz1ohPpjvLatdj4qZ5zcSohHsU');
+    makeApiRequest('');
   });
   validButton.disabled = false;
 
