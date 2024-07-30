@@ -1,0 +1,122 @@
+<!-- Single File Upload Field -->
+<div class="fileUploader {{styleClass}}">
+
+  <section class="uploadContainer">
+
+      <h6>{{documentTitle}}</h6>
+      <p>{{documentDetails}}</p>
+  
+      <span class="status ok"
+      [ngClass]="">{{status | titlecase}}</span>
+  
+      <section class="filePreview">
+
+          <label 
+              for="{{documentId}}" 
+              class="clickArea"
+              *ngIf="status !== 'available'">
+          </label>
+
+          <img 
+              class="preview"
+              *ngIf="documentType == 'image' "
+          >
+
+
+          <input 
+              type="file"
+              accept=".pdf,.png,.jpg,.webp" 
+              class="fileInput"
+              (change)="onFileChange($event)"
+              id="{{documentId}}" 
+          >
+          
+          <section class="previewFooter">
+
+              <h5 *ngIf="fileName == '' ">Upload Document</h5>
+
+              <h5 *ngIf="fileName !== ''">
+
+                  {{ (fileName.length>52)? (fileName | slice:0:54)+' ...':(fileName) }}
+                  
+              
+              </h5>
+
+              <span class="sizeLimit">Max size {{maxSizeLabel}}</span>
+
+              <!-- <label
+                  mat-icon-button
+                  class="controlButton"
+                  *ngIf="status == 'available'">
+
+                  <mat-icon svgIcon="ic-delete"> </mat-icon>
+
+              </label> -->
+
+              <!-- <button
+                  mat-icon-button
+                  class="controlButton"
+                  
+                  (click)="toggleActionContainer()"
+                  *ngIf="status !== 'available'">
+
+                  <mat-icon 
+                      svgIcon="ic-upload"
+                      *ngIf="!showActionContainer"> </mat-icon>
+
+                  <mat-icon 
+                      svgIcon="ic-close"
+                      *ngIf="showActionContainer"> </mat-icon>
+
+              </button> -->
+
+              <section   
+                       class="actionContainer"
+                       *ngIf="showActionContainer">
+
+                      <!-- <button
+                          mat-icon-button
+                          disableRipple
+                      >
+                          <mat-icon 
+                              svgIcon="ic-laptop"
+                              class="icon"> </mat-icon>
+                          <label for="{{documentId}}" >Browse device</label>
+                          
+                      </button> -->
+
+                      <!-- <button
+                          mat-icon-button
+                          disableRipple
+                      >
+                          <mat-icon 
+                              svgIcon="ic-camera"
+                              class="icon"> </mat-icon>
+
+                          <label for="">Capture with camera</label>
+                      </button> -->
+
+                      <!-- <button
+                          mat-icon-button
+                          disableRipple
+                      >
+                          <mat-icon 
+                              svgIcon="ic-print"
+                              class="icon"> </mat-icon>
+                          <label for="">Scan</label>
+                          
+                      </button> -->
+                  </section>
+
+          </section>
+          
+
+      </section>
+  
+  </section>
+
+</div>
+<!-- End Single File Upload Field -->
+
+
+  
