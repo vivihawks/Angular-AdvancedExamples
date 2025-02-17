@@ -13,9 +13,9 @@ export class AppComponent {
 	  logo = 'https://angular.io/assets/images/logos/angular/angular.png';
 
 	user =   { firstName: "Vignesh Murali", lastName: "Natarajan"};
-	welcome: string;
-	usernameLabel: string;
-	passwordLabel: string;
+	welcome!: string;
+	usernameLabel!: string;
+	passwordLabel!: string;
 
 	  inc(i: number) {
 		this.minutes = Math.min(5, Math.max(0, this.minutes + i));

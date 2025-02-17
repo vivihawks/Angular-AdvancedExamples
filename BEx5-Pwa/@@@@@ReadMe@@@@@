@@ -1,0 +1,18 @@
+Angular PWA
+~~~~~~~~~~~~
+1. Include Angular PWA in a project using the below command
+
+    ng add @angular/pwa@18.0.0   
+
+2. Install http server using the below command
+
+    npm i -g http-server
+
+3. Build the Angular application 
+4. Use the below command to serve the built Angular application
+
+    http-server dist/nfex-sample/browser
+
+5. Access the application on the http server
+6. Kill the http-server
+7. Access the application in the same url as above. The app should load as though the server is alive

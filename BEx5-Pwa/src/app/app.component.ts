@@ -12,7 +12,7 @@ export class AppComponent {
   joke: any; 
 
   constructor( updates: SwUpdate, private data: DataService) {
-	updates.available.subscribe(event => {
+	updates.versionUpdates.subscribe(event => {
 		this.update=true;
 		setTimeout(()=>
       updates.activateUpdate().then(() => document.location.reload()),5000);

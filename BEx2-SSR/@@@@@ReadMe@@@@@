@@ -1,0 +1,21 @@
+Angular SSR(Server Side Rendering) vs Static Site Generation(SSG)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SSR: is server side rendering on the fly as new request comes in, it will require node server when you deploy the project. Suitable for dynamic content, for example a product price that may very every day or by ip location
+
+SSG: is same as SSR, server side rendering but it happens in advance when you build the project. this will take the exact same path and process as SSR when prerendering (server side/build time) content on the fly, for example calling api. So SSG can do everything that SSR can (at build time, the limitation) and needs node server only during build time and then you can deploy the build as a static content to any server (without node). Suitable for static and dynamic content that doesn't change a lot over time. if it changes then you need to rebuild and deploy everything again.
+
+Steps
+~~~~~
+1a. Enable SSR at the time of project creation
+    
+    ng new BEx2-SSR --ssr
+
+OR
+
+1b. Add SSR after the project was created without SSR
+    
+    ng add @angular/ssr
+
+2. Observe the behavior and the number of times the lifecycle hooks are called. Server Side executed hooks will use the node console, while browser side executed hooks will use the browser console
+3. Use server.ts file to selectively prescribe routes that should be CSR vs SSR

@@ -8,12 +8,14 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class AppComponent implements OnInit {
 
     @ViewChild("video")
-    public video: ElementRef;
+    public video!: ElementRef;
 
     @ViewChild("canvas")
-    public canvas: ElementRef;
+    public canvas!: ElementRef;
 
     public captures: Array<any>;
+
+    public title:string = "PWA Cam";
 
     public constructor() {
         this.captures = [];

@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import * as auth0 from 'auth0-js';
+// @ts-ignore
+import auth0 from 'auth0-js';
 
 // why do you need defining window as any?
 // check this: https://github.com/aws/aws-amplify/issues/678#issuecomment-389106098
@@ -17,8 +18,8 @@ export class AuthService {
     scope: 'openid'
   });
 
-  accessToken: String;
-  expiresAt: Number;
+  accessToken!: String;
+  expiresAt!: Number;
 
   constructor(public router: Router) {}
 
@@ -27,7 +28,7 @@ export class AuthService {
   }
 
   public handleAuthentication(): void {
-    this.auth0.parseHash((err, authResult) => {
+    this.auth0.parseHash((err: any, authResult: { accessToken: String; expiresIn: number; }) => {
       if (authResult && authResult.accessToken) {
         window.location.hash = '';
         this.accessToken = authResult.accessToken;
@@ -42,8 +43,8 @@ export class AuthService {
 
   public logout(): void {
     // Remove tokens and expiry time from localStorage
-    this.accessToken = null;
-    this.expiresAt = null;
+    this.accessToken = '';
+    this.expiresAt = 0;
     // Go back to the home route
     this.router.navigate(['/']);
   }

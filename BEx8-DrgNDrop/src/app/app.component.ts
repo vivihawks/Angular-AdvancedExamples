@@ -8,7 +8,7 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 })
 export class AppComponent {
   
-  
+  title:string ="Angular Drag & Drop";
   todo = [
     'Get to work',
     'Pick up groceries',

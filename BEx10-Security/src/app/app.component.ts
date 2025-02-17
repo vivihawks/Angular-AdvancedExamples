@@ -1,9 +1,7 @@
 ﻿import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AuthenticationService } from './_services';
-import { CookieService } from './_services/cookieservice.service';
-import { User } from './_models';
+import { AuthenticationService, CookieService, User } from 'my-util-lib';
 
 @Component({ selector: 'app', templateUrl: 'app.component.html' })
 export class AppComponent {

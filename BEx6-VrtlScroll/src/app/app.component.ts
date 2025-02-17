@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as faker from 'faker';
+import { faker } from '@faker-js/faker';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,11 +10,12 @@ export class AppComponent {
   dummydata;
   constructor() { 
     this.dummydata = Array(10000)
-      .fill(1)
+      .fill(0)
       .map(_ => {
+        
         return {
-          name: faker.name.findName(),
-          company:faker.company.companyName(),
+           name: faker.person.fullName(),
+          company:faker.company.name(),
           avatar:faker.image.avatar()
         };
       });

@@ -1,0 +1,14 @@
+Angular Cypress
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cypress is an end-to-end automation testing framework for website testing. If your project needs to do automation testing, you can start with cypress. The use of JavaScript makes Cypress automation especially attractive to developers.
+
+Steps
+~~~~~
+1. Create a new Angular application or use an existing Angular application
+2. Add Cypress to the application using the below command
+    ng add @cypress/schematic
+3. The above command will set up the basic required configuration with some files and create one sepc.ts file as a sample cypress testing file.    
+4. To check cypress run the below command. It should open the Cypress console to let the specs to be run 
+    npm run cypress:open    
+5. To run the scripts without opening a console and straight on the terminal, issue the command below
+    npm run cypress:run

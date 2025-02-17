@@ -1,0 +1,50 @@
+Angular Creating and Reusing Libraries & Security Implementation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Library Creation
+~~~~~~~~~~~~~~~~
+1. Create a library by issuing the below command in an existing Angular project. This will create the library in the projects folder
+    
+    ng generate library my-lib
+
+2. This command updates the angular.json config to include a new entry in the "projects" section. This entry is made of type "library"
+3. Building, Testing and Linting the project can be done with the following commands
+    
+    ng build my-lib --configuration development
+    ng test my-lib
+    ng lint my-lib
+
+4. Publishing the library to npm registry is done with the below commands
+    ng build my-lib
+    cd dist/my-lib
+    npm publish
+
+5. Using the library in the same project involves 
+    a. Building the library
+        
+        ng build my-lib --watch
+
+    b. Importing the library, where it is needed using the below import statement      
+        import { myExport } from 'my-lib';
+
+6. Using the library in a different project
+    a. Navigate to the library project's output directory & run the command
+    
+    npm link
+    
+    You may have to trigger ng build once, so that the output directory exists. This will make your library locally available on your machine.
+    
+    b. Navigate to the application which needs the library and run the command
+    
+     npm link [name_of_your_module]
+    
+    c. Add "preserveSymlinks": true to your angular.json file under projects > architect > build
+    Run your main application with ng serve, make some changes in your library, build it. 
+    d. Once development is done, you can unlink your dependency from your main application by running the command 
+    e. npm unlink [name_of_your_module] in your main application's root directory. Go to your angular library project directory and run npm unlink so that your library isn't locally available anymore. 
+    f. You can now publish your changes and intall your latest version with npm install in your main application.
+    g. Remember it has to be the dist output folder since the angular cli does not support directly linking your library. 
+      
+    
+
+

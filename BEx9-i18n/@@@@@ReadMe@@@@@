@@ -1,0 +1,32 @@
+Angular Internationalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Internationalization vs Localization
+    Internationalization is the process of designing a software application so that it can be adapted to various languages and regions without engineering changes. Localization is the process of adapting internationalized software for a specific region or language by translating text and adding locale-specific components.
+
+2. Angular Internationalization with ngx-translate
+    a. Add ngx dependencies 
+        npm i @ngx-translate/core
+        npm i @ngx-translate/http-loader
+    b. Provide a translation file per language, containing each message that needs translation. This file is to be in json format and in the assets/i18n folder
+    c. Apply the translate pipe in the HTML views on top of message keys used in the translation files above. This will result in the message being translated
+    d. The target locale needs to be set in the constructor of the root component. Refer app.component.ts constructor
+
+3. Angular In-built Internationalization
+    a. Drawbacks
+        - Angular builds separate apps for each language
+        - Can't change the locale at runtime
+    b. Install the localize library
+        ng add @angular/localize
+    c. Mark all text you want to translate in your templates using the i18n attribute directive(refer app.component.html)
+    d. Use the ng extract-i18n command line tool to extract the translations and create an XLIFF translation file
+        ng extract-i18n --out-file src/locale/messages.en.xlf
+    e. Translate the messages in the XLIFF file (e.g. by using BabelEdit)
+    f. Create an xlf file for every language that needs to be supported
+    g. In the angular.json file, provide the localize attribute with the languages to be supported as below
+            "localize": [ "hi", "ta"],
+    h. Remember that, if this application is served using the ng serve command, only one locale in the localize attribute(as described above) should be provided. Providing multiple attributes in the localize section as above and triggering an ng serve will cause Angular to ignore the locales
+    i. To serve the application live in a single locale using the ng serve command, use only one param in the localize attribute above
+    j. If multiple locales are to be presented simultaneously, instead of an ng serve, issue an ng build command. The build will produce a folder for each locale in the output dir
+    h. Serve the entire application or a particular locale from the output dir  using an http server(http-server)
+

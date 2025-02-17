@@ -30,11 +30,11 @@ export class DataService {
     return this.categories;
   }
 
-  addPost(data) {
+  addPost(data:Post) {
     this.ELEMENT_DATA.push(data);
   }
 
-  deletePost(index) {
+  deletePost(index:number) {
     this.ELEMENT_DATA = [...this.ELEMENT_DATA.slice(0, index), ...this.ELEMENT_DATA.slice(index + 1)];
   }
 

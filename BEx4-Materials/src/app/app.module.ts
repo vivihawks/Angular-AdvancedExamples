@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {MaterialModule} from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FlexLayoutModule} from '@angular/flex-layout';
+// import {FlexLayoutModule} from '@angular/flex-layout';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {AppRouters} from './app.routes';
@@ -24,14 +24,11 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule,
+    // FlexLayoutModule,
     AppRouters,
     FormsModule,
   ],
   providers: [DataService, AuthService],
-  bootstrap: [AppComponent],
-  entryComponents: [
-    PostDialogComponent
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

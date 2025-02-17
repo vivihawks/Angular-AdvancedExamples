@@ -2,10 +2,10 @@ import {Component} from '@angular/core';
 import {DataService} from '../data/data.service';
 import {Post} from '../Post';
 import {DataSource} from '@angular/cdk/table';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {AuthService} from '../auth.service';
 import {PostDialogComponent} from '../post-dialog/post-dialog.component';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,7 +19,7 @@ export class DashboardComponent {
   displayedColumns = ['date_posted', 'title', 'category', 'delete'];
   dataSource = new PostDataSource(this.dataService);
 
-  deletePost(id) {
+  deletePost(id:number) {
     if (this.auth.isAuthenticated()) {
       this.dataService.deletePost(id);
       this.dataSource = new PostDataSource(this.dataService);

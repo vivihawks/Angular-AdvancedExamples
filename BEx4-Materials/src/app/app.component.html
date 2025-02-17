@@ -5,24 +5,24 @@
          *ngIf="!auth.isAuthenticated()"
          (click)="auth.login()">
         <mat-icon class="icon">input</mat-icon>
-        <span class="label">Login</span>
+        <span class="">Login</span>
       </a>
       <a mat-list-item
          *ngIf="auth.isAuthenticated()"
          routerLink="/">
         <mat-icon class="icon">home</mat-icon>
-        <span class="label">Home</span>
+        <span class="">Home</span>
       </a>
       <a mat-list-item
          routerLink="/dashboard">
         <mat-icon class="icon">dashboard</mat-icon>
-        <span class="label">Dashboard</span>
+        <span class="">Dashboard</span>
       </a>
       <a  mat-list-item
           *ngIf="auth.isAuthenticated()"
           (click)="auth.logout()" type="button">
         <mat-icon class="icon">input</mat-icon>
-        <span class="label">LogOut</span>
+        <span class="">LogOut</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>
@@ -38,42 +38,42 @@
           Material Blog
         </a>
       </div>
-      <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
-        <ul fxLayout fxLayoutGap="20px" class="navigation-items">
-          <li>
+      <span fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
+        <span fxLayout fxLayoutGap="20px" class="navigation-items">
+          <span>
             <a
               *ngIf="!auth.isAuthenticated()"
               (click)="auth.login()">
               <mat-icon class="icon">input</mat-icon>
-              <span  class="label">Login</span>
+              <span  class="">Login</span>
             </a>
-          </li>
-          <li>
+          </span>
+          <span>
             <a
               *ngIf="auth.isAuthenticated()"
               routerLink="/">
               <mat-icon class="icon">home</mat-icon>
-              <span class="label">Home</span>
+              <span class="">Home</span>
             </a>
-          </li>
-          <li>
+          </span>
+          <span>
             <a
               routerLink="/dashboard">
               <mat-icon class="icon">dashboard</mat-icon>
-              <span class="label">Dashboard</span>
+              <span class="">Dashboard</span>
             </a>
-          </li>
-          <li>
+          </span>
+          <span>
             <a
               *ngIf="auth.isAuthenticated()"
               (click)="auth.logout()" type="button"
             >
               <mat-icon class="icon">input</mat-icon>
-              <span class="label">LogOut</span>
+              <span class="">LogOut</span>
             </a>
-          </li>
-        </ul>
-      </div>
+          </span>
+        </span>
+      </span>
     </mat-toolbar>
     <main>
       <router-outlet></router-outlet>

@@ -1,85 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="introductionHeader" datatype="html">
-        <source>
-    Hello i18n!
+        <source> Hello i18n!
 </source>
         <target>
-    Bonjour i18n !
-</target>
+		Bonjour i18n !
+        </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2,5</context>
         </context-group>
         <note priority="1" from="description">An introduction header for this sample</note>
         <note priority="1" from="meaning">User welcome</note>
       </trans-unit>
-      <trans-unit id="ba0cc104d3d69bf669f97b8d96a4c5d8d9559aa3" datatype="html">
+      <trans-unit id="noElement" datatype="html">
         <source>I don&apos;t output any element</source>
         <target>Je n'affiche aucun élément</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5,7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="701174153757adf13e7c24a248c8a873ac9f5193" datatype="html">
-        <source>Angular logo</source>
-        <target>Logo d'Angular</target>
+      <trans-unit id="uMAgo" datatype="html">
+        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago}}" xid="1887283401472369100"/></source>
+                <target>
+          Mis à jour <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+ </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12,14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="d69f6b42305f49332026fef24b40227f02e34594" datatype="html">
-        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/></source>
-        <target>Mis à jour <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5a134dee893586d02bffc9611056b9cadf9abfad" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes ago} }</source>
+      <trans-unit id="2002272803511843863" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
         <target>{VAR_PLURAL, plural, =0 {à l'instant} =1 {il y a une minute} other {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes} }</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="f99f34ac9bd4606345071bd813858dec29f3b7d1" datatype="html">
-        <source>The author is <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></source>
+      <trans-unit id="theAuthIs" datatype="html">
+        <source>The author is <x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}" xid="7670372064920373295"/></source>
         <target>L'auteur est <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
-        <source>{VAR_SELECT, select, male {male} female {female} other {other} }</source>
+      <trans-unit id="7670372064920373295" datatype="html">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <target>{VAR_SELECT, select, male {un homme} female {une femme} other {autre} }</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="972cb0cf3e442f7b1c00d7dab168ac08d6bdf20c" datatype="html">
-        <source>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+      <trans-unit id="uBy" datatype="html">
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,
+  =0 {just now}
+  =1 {one minute ago}
+  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}" xid="6988904457887003660"/>
 </source>
-        <target>Mis à jour: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+   <target>
+   Mis à jour: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
 </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18,25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7151c2e67748b726f0864fc443861d45df21d706" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes ago by {VAR_SELECT, select, male {male} female {female} other {other} }} }</source>
+      <trans-unit id="2508975984005233379" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago by {VAR_SELECT, select, male {male} female {female} other {other}}}}</source>
         <target>{VAR_PLURAL, plural, =0 {à l'instant} =1 {il y a une minute} other {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes par {VAR_SELECT, select, male {un homme} female {une femme} other {autre} }} }</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app\app.component.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18,24</context>
         </context-group>
       </trans-unit>
     </body>

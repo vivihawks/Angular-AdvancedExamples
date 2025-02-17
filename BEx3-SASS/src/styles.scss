@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/scss/bootstrap";
-
-$fa-font-path: "~font-awesome/fonts";
-
-@import "~font-awesome/scss/font-awesome";
+@import "bootstrap/scss/bootstrap";
 
 //Basic Mixin
 @mixin themable($theme-name, $container-bg, $left-bg, $right-bg, $innertext, $button-bg) {
@@ -60,7 +56,7 @@ $fa-font-path: "~font-awesome/fonts";
 $theme-1: (
    container: (
        bg: #e4ada7,
-       color: #000,
+       color: #f00,
        border-color: #000
    ),
    left: (
