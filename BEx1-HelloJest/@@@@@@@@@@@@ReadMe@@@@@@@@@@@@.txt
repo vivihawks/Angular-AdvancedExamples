@@ -5,7 +5,7 @@ Testing
 	- Black Box
 		- E2E Testing - Tester's Job
 			- Protractor(Angular's) + Selenium
-			- Cypress
+			- Cypress <---<<<
 	- White Box
 		- Unit Testing - User's Job
 			- Karma(Angular's) + Jasmine

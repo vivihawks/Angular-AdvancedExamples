@@ -19,3 +19,6 @@ OR
 
 2. Observe the behavior and the number of times the lifecycle hooks are called. Server Side executed hooks will use the node console, while browser side executed hooks will use the browser console
 3. Use server.ts file to selectively prescribe routes that should be CSR vs SSR
+4. To see things in action
+    a. SSG - Build the Angular application using ng build command. Observe the prerendered static routesfile names starting with "chunk-". These files are NOT lazily loaded. But pre-generated and sent to the browser, to be loaded quickly. When the application is running, if these components are accessed, no additional UI requests are fired.  Observe the traffic in the browser network console as these links are navigated
+    b. SSR - Issue the command - npm run serve:ssr:BEx2-SSR. This should start node server on port 4000. Access the Angular application on port localhost:4000. Access the various routes (First Component, Second Component etc.) in the home page of the applications. Regardless of whether these components are loaded using Routes / hrefs, the page will always refresh indicating that the content is obtained from the server. Observe the traffic in the browser network console as these links are navigated
